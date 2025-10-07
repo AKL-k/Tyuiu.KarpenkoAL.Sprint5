@@ -8,11 +8,12 @@ namespace Tyuiu.KarpenkoAL.Sprint5.Task0.V16.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            string path = Path.Combine(Directory.GetCurrentDirectory(), "OutPutFileTask0.txt");
+            string tempPath = Path.GetTempPath();
+            string path = Path.Combine(tempPath, "OutPutFileTask0.txt");
 
-            double z = (2 * Math.Pow(x, 2) - 1) / (Math.Sqrt(Math.Pow(x, 2) - 2));
-
+            double z = (2 * Math.Pow(x, 2) - 1) / Math.Sqrt(Math.Pow(x, 2) - 2);
             z = Math.Round(z, 3);
+
             File.WriteAllText(path, z.ToString());
             return path;
         }
