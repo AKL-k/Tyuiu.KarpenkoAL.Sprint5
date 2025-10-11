@@ -32,5 +32,5 @@ Console.WriteLine("* РЕЗУЛЬТАТ:                                        
 Console.WriteLine("***************************************************************************");
 
 double res = ds.LoadFromDataFile(path);
-Console.WriteLine(res);
+Console.WriteLine("Факториал первого целого числа = " + res);
 Console.ReadKey();
