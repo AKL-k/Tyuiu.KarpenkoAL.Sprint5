@@ -6,7 +6,7 @@ namespace Tyuiu.KarpenkoAL.Sprint5.Task5.V7.Test
     public sealed class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void CheckedExistsFile()
         {
             DataService ds = new DataService();
 
